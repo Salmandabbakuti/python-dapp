@@ -2,7 +2,6 @@ import json
 from web3 import Web3, HTTPProvider
 from web3.contract import ConciseContract
 from flask import Flask, render_template, request
-import cgi
 
 # web3.py instance
 w3 = Web3(HTTPProvider("https://ropsten.infura.io/<Your infura Api Token")) #Modify
