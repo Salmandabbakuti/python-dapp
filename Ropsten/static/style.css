@@ -28,8 +28,8 @@ input {
 
 	transition: transform 80ms ease-in;
 }
-a:hover{
-	opacity: 0.5;
+.button:hover{
+	opacity: 0.4;
 }
 .main {
 	background: #FF416C;
