@@ -28,7 +28,7 @@ input {
 
 	transition: transform 80ms ease-in;
 }
-a:hover{
+.button:hover{
 	opacity: 0.5;
 }
 .main {
