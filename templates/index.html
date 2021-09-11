@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <title>Greeter Dapp</title>
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+   <link rel="stylesheet" href="../static/css/style.css" />
+</head>
+
+<body class="is-preload">
+   <div class="main" style="text-align: center;">
+      <h1>{{greeting }}</h1>
+      <form method="post" action="{{url_for('greet')}}">
+         <input type="text" style="width: 50%;" name="write" placeholder="Write Your Greeting Here.."></br>
+         <input class="button" type="submit" value="Greet">
+         <br>
+      </form>
+   </div>
+</body>
+
+</html>
