@@ -1,12 +1,24 @@
 # Python-Dapp
-web3.py based dapp on infura node and gochain.
+
+web3.py based dapp
 
 #### Steps:
 
->Note: Update ```app.py``` code with your account address and private key.  ***use gochain endpoint if you don't have infura api key
+1. Deploy your contract on your preferred network(update `RPC_URL` accordingly) and get the contract address.
+
+2. Create `.env` file in the root directory with below parameters:
 
 ```
+PRIVATE_KEY=
+RPC_URL=
+CONTRACT_ADDRESS=
+```
+
+3. Install dependencies and run app:
+
+```bash
 pip install -r requirements.txt
 
-python app.py
+python app.py # open http://localhost:8000
+
 ```

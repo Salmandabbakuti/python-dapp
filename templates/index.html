@@ -11,9 +11,9 @@
 <body class="is-preload">
    <div class="main" style="text-align: center;">
       <h1>{{greeting }}</h1>
-      <form method="post" action="{{url_for('greet')}}">
-         <input type="text" style="width: 50%;" name="write" placeholder="Write Your Greeting Here.."></br>
-         <input class="button" type="submit" value="Greet">
+      <form method="post" action="{{url_for('set_greeting')}}">
+         <input type="text" style="width: 50%;" name="greeting" placeholder="Write Your Greeting Here.."></br>
+         <input class="button" type="submit" value="Submit">
          <br>
       </form>
    </div>
