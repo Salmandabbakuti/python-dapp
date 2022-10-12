@@ -8,7 +8,7 @@ from flask import Flask, render_template, request
 load_dotenv('.env')
 
 # web3.py instance
-w3 = Web3(HTTPProvider(os.environ.get('RPC_URL'))) # for contract deployed on ropsten
+w3 = Web3(HTTPProvider(os.environ.get('RPC_URL'))) 
 print('Web3 Connected:',w3.isConnected())
 
 # account setup
@@ -19,7 +19,7 @@ account_address = public_key.address
 # Contract instance
 contract_artifacts_file = json.load(open('./contracts/Greeter.json'))
 abi = contract_artifacts_file['abi']
-contract_address = os.environ.get('CONTRACT_ADDRESS') #contract address deployed on gochain
+contract_address = os.environ.get('CONTRACT_ADDRESS')
 contract_instance = w3.eth.contract(abi=abi, address=contract_address)
 
 app = Flask(__name__)
